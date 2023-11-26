@@ -3,20 +3,206 @@
 
 <head>
   <script src="./Incremental/break_eternity.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
 
   <style>
+
+    body {
+      background-color: #222222;
+      font-family: 'Fredoka One';
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    .building {
+      background-color: #444444;
+      width: 20vw;
+      height: 5vw;
+      color: darkgray;
+      font-size: 2vw;
+      font-family: 'Fredoka One';
+      border: 0.25vw solid black;
+      border-top-right-radius: 1vw;
+      border-bottom-right-radius: 1vw;
+      -webkit-text-stroke: gray;
+      -webkit-text-stroke-width: 0.15vw;
+      margin-left: -0.75vw;
+
+      transition: 0.3s;
+    }
+
+    .buildingTag {
+      background-color: #222222;
+      width: 20vw;
+      height: 5vw;
+      color: gray;
+      font-size: 2vw;
+      font-family: 'Fredoka One';
+      border: 0.25vw solid black;
+      border-top-left-radius: 1vw;
+      border-bottom-left-radius: 1vw;
+      -webkit-text-stroke: dimgray;
+      -webkit-text-stroke-width: 0.15vw;
+      margin-right: -0.75vw;
+
+      transition: 0.3s;
+    }
+
+    .buildingTag:hover {
+      border-top-right-radius: 1vw;
+      border-bottom-right-radius: 1vw;
+      transform: scale(1.1);
+      background-color: #111111;
+    }
+
+    .building:hover {
+      border-top-left-radius: 1vw;
+      border-bottom-left-radius: 1vw;
+      transform: scale(1.1);
+      background-color: #222222;
+    }
+
+    .building:active {
+      transition: 0.4s;
+      transform: scale(1.2);
+      background-color: #111111;
+    }
+
+    .title {
+      text-align: center; 
+      color: darkgray; 
+      font-size: 2.5vw;
+      display: inline;
+      padding-left: 5vw;
+      -webkit-text-stroke: gray;
+      -webkit-text-stroke-width: 0.05vw;
+    }
+
+    .img {
+      margin-left: 5vw;
+      width: 2.5vw; 
+      height: 2.5vw;
+      transform: rotate(0deg) scale(3);
+    }
+
+    .img:hover {
+      transform: rotate(360deg) scale(3.5);
+      transition: 1s;
+    }
+
+    .stat {
+      background-color: #111111;
+      width: 250vw;
+      height: 100vw;
+      margin-top: -5.1vw;
+      padding-left: 10vw;
+      color: gray;
+      font-size: 2.5vw;
+      border: 0.25vw solid black;
+      -webkit-text-stroke: dimgray;
+      -webkit-text-stroke-width: 0.05vw;
+      margin-right: -225vw;
+
+      transition: 0.5s;
+    }
+
+    .stat:hover {
+      background-color: #222222;
+      width: 255vw;
+      transition: 0.3s;
+    }
+
+    .head:hover {
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
+
+    .stats {
+      background-color: #222222;
+      width: 25vw;
+      height: 7.5vw;
+      border-radius: 1vw;
+      border: 0.25vw solid #333333;
+      text-align: center;
+      font-size: 1.5vw;
+    }
+
+    .stats:hover {
+      transform: scale(1.05);
+      background-color: #111111;
+      transition: 0.3s;
+    }
+
+    .statsR {
+      background-color: #333333;
+      width: 25vw;
+      border-radius: 1vw;
+      border: 0.25vw solid black;
+      text-align: center;
+      font-size: 1.5vw;
+    }
+
+    .statsR:hover {
+      transform: scale(1.05);
+      background-color: #222222;
+      transition: 0.3s;
+    }
+
+    .statsR:active {
+      transform: scale(1.1);
+      background-color: #111111;
+      transition: 0.3s;
+    }
 
   </style>
 
 </head>
 
 <body>
+  <br>
+  <div style="align-items: center;" id="heading" class="head">
+    <button class="building" style="width: 5vw; height: 2.5vw; margin-left: 5vw; font-size: 1vw; -webkit-text-stroke-width: 0.05vw; border-radius: 0.5vw;" id="headClose">Close</button>
+    <h1 class="title" style="font-size: 1.5vw; padding-left: 1vw; -webkit-text-stroke-width: 0.025vw;">It is recommended to play with fullscreen</h1>
+    <h1 class="title" style="padding-left: 10vw;">STAT INCREMENETAL</h1>
+    <h1 class="title" style="padding-left: 5vw;">V0.1</h1>
+    <a href="https://discord.gg/jCnqNHpY" style="display: inline;">
+      <img src="https://static.vecteezy.com/system/resources/previews/018/930/718/original/discord-logo-discord-icon-transparent-free-png.png" class="img" style="display: inline-block">
+    </a>
+  </div>
+  <br>
+  <div style="height: 1vw; width: 100vw; background-color: black; margin-bottom: 5vw;"></div>
 
-  <h1>You should probably leave</h1>
+  <div style="display: flex; justify-content: space-around;">
+    <div>
+      <div id="multiButtons">
+        <button class="buildingTag">0 Multi</button>
+        <button class="building">Multi | 10 Cash</button>
+      </div>
+    </div>
+    <div class="stat">
+      <div>
+        <br>
+        <div class="stats">
+          <h1 id="cashStat">Cash: 0</h1>
+        </div>
+        <br> 
+        <div class="statsR"">
+          <h1 id="Transcend">Transcend</h1>
+          <h1 id="TranscendStat" style="font-size: 2vw;">You Have: 0</h1>
+        </div>
+        <br>
+        <div class="statsR">
+          <h1 id="Immortal">Immortalize</h1>
+          <h1 id="ImmortalStat" style="font-size: 2vw;">You Have: 0</h1>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <script>
-    alert(new Decimal('1e+500'))
-    // Temporary
+  <script type="module">
+    import {hello} from './Incremental/main.js'
+
+    alert(hello())
   </script>
 
 </body>
