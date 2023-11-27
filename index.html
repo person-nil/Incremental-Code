@@ -63,6 +63,8 @@
     }
 
     .building:active {
+      border-top-left-radius: 1vw;
+      border-bottom-left-radius: 1vw;
       transition: 0.4s;
       transform: scale(1.2);
       background-color: #111111;
@@ -92,23 +94,24 @@
 
     .stat {
       background-color: #111111;
-      width: 250vw;
+      width: 10vw;
       height: 100vw;
       margin-top: -5.1vw;
-      padding-left: 10vw;
+      padding-left: 15vw;
+      padding-right: 50vw;
+      margin-right: -40vw;
       color: gray;
       font-size: 2.5vw;
       border: 0.25vw solid black;
       -webkit-text-stroke: dimgray;
       -webkit-text-stroke-width: 0.05vw;
-      margin-right: -225vw;
 
       transition: 0.5s;
     }
 
     .stat:hover {
       background-color: #222222;
-      width: 255vw;
+      width: 15vw;
       transition: 0.3s;
     }
 
@@ -120,29 +123,30 @@
     .stats {
       background-color: #222222;
       width: 25vw;
-      height: 0vw;
-      margin-top: -2vw;
+      height: 3.75vw;
       border-radius: 1vw;
       border: 0.25vw solid #333333;
       text-align: center;
-      font-size: 1.5vw;
-      padding-bottom: 3vw;
-      padding-top: 3vw;
+      font-size: 3vw;
     }
 
     .stats:hover {
       transform: scale(1.05);
       background-color: #111111;
-      transition: 0.3s;
+      transition: 0.3s;  
     }
 
     .statsR {
       background-color: #333333;
       width: 25vw;
+      height: 10vw;
       border-radius: 1vw;
       border: 0.25vw solid black;
       text-align: center;
       font-size: 1.5vw;
+      line-height: 2vw;
+      margin-bottom: 2.5vw;
+      margin-right: 10vw;
     }
 
     .statsR:hover {
@@ -162,6 +166,10 @@
 </head>
 
 <body>
+  <script>
+    console.error('%c VM663:1 ONLY USE THE CONSOLE IF I (A_Person) TELL YOU TO AND ONLY PASTE WHAT I SAY TO PASTE OR YOUR DATA WILL GLITCH AND BE RESET', 'font size: 36vw; font-weight: bold;')
+  </script>
+
   <br>
   <div style="align-items: center;" id="heading" class="head">
     <button class="building" style="width: 5vw; height: 2.5vw; margin-left: 5vw; font-size: 1vw; -webkit-text-stroke-width: 0.05vw; border-radius: 0.5vw;" id="headClose">Close</button>
@@ -182,18 +190,30 @@
         <button class="building">Multi | 10 Cash</button>
       </div>
     </div>
-    <div class="stat">
+    <div class="stat" style="display: flex; justify-content: space-around;">
       <div>
-        <br>
-        <div class="stats">
-          <h1 id="cashStat">Cash: 0</h1>
+        <div>
+          <h1 id="cashStat" class="stats">Cash: 0</h1>
         </div>
-        <br> 
-        <div class="statsR"">
+        <br>
+        <div class="statsR">
           <h1 id="Transcend">Transcend</h1>
           <h1 id="TranscendStat" style="font-size: 2vw;">You Have: 0</h1>
         </div>
+        <div class="statsR">
+          <h1 id="Immortal">Immortalize</h1>
+          <h1 id="ImmortalStat" style="font-size: 2vw;">You Have: 0</h1>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h1 id="cashStat" class="stats">Cash: 0</h1>
+        </div>
         <br>
+        <div class="statsR">
+          <h1 id="Transcend">Transcend</h1>
+          <h1 id="TranscendStat" style="font-size: 2vw;">You Have: 0</h1>
+        </div>
         <div class="statsR">
           <h1 id="Immortal">Immortalize</h1>
           <h1 id="ImmortalStat" style="font-size: 2vw;">You Have: 0</h1>
