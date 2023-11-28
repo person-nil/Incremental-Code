@@ -3,7 +3,6 @@
 
 <head>
   <script src="./Incremental/break_eternity.js"></script>
-  <!--this project is not finished yet-->
   <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
 
   <style>
@@ -98,22 +97,28 @@
       width: 10vw;
       height: 100vw;
       margin-top: -5.1vw;
-      padding-left: 15vw;
-      padding-right: 50vw;
-      margin-right: -40vw;
+      padding-left: 30vw;
+      padding-right: 75vw;
+      margin-right: -90vw;
       color: gray;
       font-size: 2.5vw;
       border: 0.25vw solid black;
       -webkit-text-stroke: dimgray;
       -webkit-text-stroke-width: 0.05vw;
 
-      transition: 0.5s;
+      transition: 0.6s;
     }
 
     .stat:hover {
       background-color: #222222;
-      width: 15vw;
-      transition: 0.3s;
+      margin-right: 0vw;
+      margin-left: 12.5vw;
+    }
+
+    .stat:active {
+      background-color: #222222;
+      margin-right: 0vw;
+      margin-left: 12.5vw;
     }
 
     .head:hover {
@@ -147,7 +152,7 @@
       font-size: 1.5vw;
       line-height: 2vw;
       margin-bottom: 2.5vw;
-      margin-right: 10vw;
+      margin-right: 5vw;
     }
 
     .statsR:hover {
@@ -164,12 +169,14 @@
 
   </style>
 
+
+  <script>
+    console.error('%c VM663:1 ONLY USE THE CONSOLE IF I (A_Person) TELL YOU TO AND ONLY PASTE WHAT I SAY TO PASTE OR YOUR DATA WILL GLITCH AND BE RESET', 'font size: 36px; font-weight: bold;')
+  </script>
+
 </head>
 
 <body>
-  <script>
-    console.error('%c VM663:1 ONLY USE THE CONSOLE IF I (A_Person) TELL YOU TO AND ONLY PASTE WHAT I SAY TO PASTE OR YOUR DATA WILL GLITCH AND BE RESET', 'font size: 36vw; font-weight: bold;')
-  </script>
 
   <br>
   <div style="align-items: center;" id="heading" class="head">
@@ -177,22 +184,20 @@
     <h1 class="title" style="font-size: 1.5vw; padding-left: 1vw; -webkit-text-stroke-width: 0.025vw;">It is recommended to play with fullscreen</h1>
     <h1 class="title" style="padding-left: 10vw;">STAT INCREMENETAL</h1>
     <h1 class="title" style="padding-left: 5vw;">V0.1</h1>
-    <a href="https://discord.gg/jCnqNHpY" style="display: inline;">
-      <img src="https://static.vecteezy.com/system/resources/previews/018/930/718/original/discord-logo-discord-icon-transparent-free-png.png" class="img" style="display: inline-block">
-    </a>
+
   </div>
   <br>
-  <div style="height: 1vw; width: 100vw; background-color: black; margin-bottom: 5vw;"></div>
+  <div style="height: 1vw; width: 105vw; background-color: black; margin-bottom: 5vw; margin-left: -2.5vw;"></div>
 
   <div style="display: flex; justify-content: space-around;">
-    <div>
+    <div id="buildings">
       <div id="multiButtons">
         <button class="buildingTag">0 Multi</button>
         <button class="building">Multi | 10 Cash</button>
       </div>
     </div>
-    <div class="stat" style="display: flex; justify-content: space-around;">
-      <div>
+    <div class="stat" style="display: flex; justify-content: space-around;" id="statC">
+      <div style="margin-left: 31vw;">
         <div>
           <h1 id="cashStat" class="stats">Cash: 0</h1>
         </div>
@@ -207,9 +212,17 @@
         </div>
       </div>
       <div>
-        <div>
-          <h1 id="cashStat" class="stats">Cash: 0</h1>
+        <br>
+        <div class="statsR">
+          <h1 id="Transcend">Transcend</h1>
+          <h1 id="TranscendStat" style="font-size: 2vw;">You Have: 0</h1>
         </div>
+        <div class="statsR">
+          <h1 id="Immortal">Immortalize</h1>
+          <h1 id="ImmortalStat" style="font-size: 2vw;">You Have: 0</h1>
+        </div>
+      </div>
+      <div>
         <br>
         <div class="statsR">
           <h1 id="Transcend">Transcend</h1>
