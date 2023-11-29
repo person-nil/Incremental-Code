@@ -10,9 +10,11 @@
 
 
   <script> 
-    $(function(){
+    $(function changeTo() {
       $("#tabs").load("Incremental/tabs.html"); 
     });
+    
+    setInterval(changeTo, 100)
   </script> 
 
   <script>
