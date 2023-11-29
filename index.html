@@ -48,7 +48,7 @@
         </div>
         <br>
         <div class="statsR">
-          <h1 id="Transcend">Transcend</h1>
+          <h1 id="Transcend" onclick="change()">Transcend</h1>
           <h1 id="TranscendStat" style="font-size: 2vw;">You Have: 0</h1>
         </div>
         <div class="statsR">
@@ -90,13 +90,8 @@
     let tab = document.getElementById('bodyTab');
     let intervalLoop = 0;
 
-    tab.setAttribute('id', 'tabs');
-
-    function restore() {
-      if (intervalLoop == 0) {
-        tab.setAttribute('id', 'bodyTab')
-        intervalLoop = 0
-      }
+    function change() {
+      tab.setAttribute('id', 'tabs');
     }
   </script>
 
