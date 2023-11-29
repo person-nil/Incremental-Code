@@ -8,13 +8,6 @@
   <link href="./Incremental/style.css" rel="stylesheet">
   <link href="./Incremental/tabs.html" rel="import">
 
-
-  <script> 
-    $(function(){
-      $("#tabs").load("Incremental/tabs.html"); 
-    });
-  </script> 
-
   <script>
     console.warn('%c VM663:1 ONLY USE THE CONSOLE IF I (A_Person) TELL YOU TO AND ONLY PASTE WHAT I SAY TO PASTE OR YOUR DATA WILL GLITCH AND BE RESET', 'font size: 36px; font-weight: bold;')
   </script>
@@ -47,7 +40,7 @@
           <h1 id="cashStat" class="stats">Cash: 0</h1>
         </div>
         <br>
-        <div class="statsR">
+        <div class="statsR" onclick="change()">
           <h1 id="Transcend">Transcend</h1>
           <h1 id="TranscendStat" style="font-size: 2vw;">You Have: 0</h1>
         </div>
@@ -84,6 +77,15 @@
     import {hello} from './Incremental/main.js'
 
     alert(hello());
+  </script>
+
+  <script>
+    let tab = document.getElementById('bodyTab');
+
+    function change() {
+      tab.setAttribute('id', 'tabs');
+      $("#tabs").load("Incremental/tabs.html");
+    }
   </script>
 
 </body>

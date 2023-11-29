@@ -6,14 +6,12 @@
     </head>
 
     <body id="tabs">
-        <button class="building" onclick="loadBack">hi</button>
+        <button class="building" onclick="changeBack()">hi</button>
 
         <script>
-            setInterval(() => {
-                $(function() { 
-                    $("#tabs").load("indexOrigin.html"); 
-                });
-            }, 1);
+            function changeBack() {
+                $("#tabs").load("Incremental/indexOrigin.html");
+            }
         </script>
     </body>
 </html>
