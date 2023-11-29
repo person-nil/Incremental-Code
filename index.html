@@ -8,17 +8,6 @@
   <link href="./Incremental/style.css" rel="stylesheet">
   <link href="./Incremental/tabs.html" rel="import">
 
-
-  <script> 
-    function changeTo() {
-      $("#tabs").load("Incremental/tabs.html");
-      alert(2)
-    };
-
-    setInterval(changeTo, 2500)
-
-  </script> 
-
   <script>
     console.warn('%c VM663:1 ONLY USE THE CONSOLE IF I (A_Person) TELL YOU TO AND ONLY PASTE WHAT I SAY TO PASTE OR YOUR DATA WILL GLITCH AND BE RESET', 'font size: 36px; font-weight: bold;')
   </script>
@@ -95,7 +84,7 @@
 
     function change() {
       tab.setAttribute('id', 'tabs');
-      alert(1)
+      $("#tabs").load("Incremental/tabs.html");
     }
   </script>
 
