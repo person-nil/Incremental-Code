@@ -9,9 +9,11 @@
         <button class="building" onclick="loadBack">hi</button>
 
         <script>
-            $(function() { 
-                $("#tabs").load("Incremental/indexOrigin.html"); 
-            });
+            setInterval(() => {
+                $(function() { 
+                    $("#tabs").load("Incremental/indexOrigin.html"); 
+                });
+            }, 100);
         </script>
     </body>
 </html>
