@@ -6,10 +6,12 @@
     </head>
 
     <body id="tabs">
-        <button class="building" onclick="loadBack()">hi</button>
+        <button class="building" onclick="loadBack">hi</button>
 
         <script>
-            $("#tabs").load("Incremental/indexOrigin.html"); 
+            $(function() { 
+                $("#tabs").load("Incremental/indexOrigin.html"); 
+            });
         </script>
     </body>
 </html>
