@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <link href="./styleTab.css" rel="stylesheet">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    </head>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+    <link href="./styleTab.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
 
-    <body id="tabs">
-        <button class="building" onclick="changeBack()">hi</button>
+  <body id="tabs">
 
-        <script>
-            function changeBack() {
-                $("#tabs").load("indexOrigin.html");
-                alert(1)
-            }
-        </script>
-    </body>
-</html>
+    <button class="goBack">Go Back</button>
+
+    <div style="display: flex; justify-content: center;">
+      <button>hi</button>
+    </div>
+
+    <script>
+      function changeBack() {
+        $("#tabs").load("Incremental/indexOrigin.html");
+      }
+    </script>
+  </body>
+</html> 

@@ -30,8 +30,8 @@
     font-size: 2vw;
     font-family: 'Fredoka One';
     border: 0.25vw solid black;
-    border-top-left-radius: 1vw;
-    border-bottom-left-radius: 1vw;
+    border-top-left-radius: 1.25vw;
+    border-bottom-left-radius: 1.25vw;
     -webkit-text-stroke: dimgray;
     -webkit-text-stroke-width: 0.15vw;
     margin-right: -0.75vw;
@@ -40,22 +40,19 @@
   }
 
   .buildingTag:hover {
-    border-top-right-radius: 1vw;
-    border-bottom-right-radius: 1vw;
+    border-radius: 1vw;
     transform: scale(1.1);
     background-color: #111111;
   }
 
   .building:hover {
-    border-top-left-radius: 1vw;
-    border-bottom-left-radius: 1vw;
+    border-radius: 1vw;
     transform: scale(1.1);
     background-color: #222222;
   }
 
   .building:active {
-    border-top-left-radius: 1vw;
-    border-bottom-left-radius: 1vw;
+    border-radius: 1.25vw;
     transition: 0.4s;
     transform: scale(1.2);
     background-color: #111111;
@@ -131,6 +128,7 @@
     transform: scale(1.05);
     background-color: #111111;
     transition: 0.3s;  
+    border-radius: 1.3vw;
   }
 
   .statsR {
@@ -150,10 +148,12 @@
     transform: scale(1.05);
     background-color: #222222;
     transition: 0.3s;
+    border-radius: 1.3vw;
   }
 
   .statsR:active {
     transform: scale(1.1);
     background-color: #111111;
     transition: 0.3s;
+    border-radius: 1.6vw;
   }

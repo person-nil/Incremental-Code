@@ -7,6 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link href="./Incremental/style.css" rel="stylesheet">
   <link href="./Incremental/tabs.html" rel="import">
+  <link href="./Incremental/styleTab.css" rel="stylesheet">
 
   <script>
     console.warn('%c VM663:1 ONLY USE THE CONSOLE IF I (A_Person) TELL YOU TO AND ONLY PASTE WHAT I SAY TO PASTE OR YOUR DATA WILL GLITCH AND BE RESET', 'font size: 36px; font-weight: bold;')
@@ -50,7 +51,9 @@
         </div>
       </div>
       <div>
-        <h1 id="settings" class="stats">Settings</h1>
+        <div>
+          <h1 id="settings" class="stats">Settings</h1>
+        </div>
         <div class="statsR">
           <h1 id="Transcend">Transcend</h1>
           <h1 id="TranscendStat" style="font-size: 2vw;">You Have: 0</h1>
@@ -62,12 +65,8 @@
       </div>
       <div style="opacity: 0;">
         <h1 class="stats"></h1>
-        <div class="statsR">
-
-        </div>
-        <div class="statsR">
-
-        </div>
+        <div class="statsR"></div>
+        <div class="statsR"></div>
       </div>
     </div>
   </div>
@@ -76,7 +75,7 @@
   <script type="module">
     import {hello} from './Incremental/main.js'
 
-    alert(hello());
+    console.log(hello())
   </script>
 
   <script>

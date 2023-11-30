@@ -1,0 +1,185 @@
+/*
+
+.building {
+  background-color: #444444;
+  width: 20vw;
+  height: 5vw;
+  color: darkgray;
+  font-size: 2vw;
+  font-family: 'Fredoka One';
+  border: 0.25vw solid black;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  -webkit-text-stroke: gray;
+  -webkit-text-stroke-width: 0.15vw;
+  margin-left: -0.75vw;
+
+  transition: 0.3s;
+}
+
+.buildingTag {
+  background-color: #222222;
+  width: 20vw;
+  height: 5vw;
+  color: gray;
+  font-size: 2vw;
+  font-family: 'Fredoka One';
+  border: 0.25vw solid black;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+  -webkit-text-stroke: dimgray;
+  -webkit-text-stroke-width: 0.15vw;
+  margin-right: -0.75vw;
+
+  transition: 0.3s;
+}
+
+.buildingTag:hover {
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  transform: scale(1.1);
+  background-color: #111111;
+}
+
+.building:hover {
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+  transform: scale(1.1);
+  background-color: #222222;
+}
+
+.building:active {
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+  transition: 0.4s;
+  transform: scale(1.2);
+  background-color: #111111;
+}
+
+.title {
+  text-align: center; 
+  color: darkgray; 
+  font-size: 2.5vw;
+  display: inline;
+  padding-left: 5vw;
+  -webkit-text-stroke: gray;
+  -webkit-text-stroke-width: 0.05vw;
+}
+
+.img {
+  margin-left: 5vw;
+  width: 2.5vw; 
+  height: 2.5vw;
+  transform: rotate(0deg) scale(3);
+}
+
+.img:hover {
+  transform: rotate(360deg) scale(3.5);
+  transition: 1s;
+}
+
+.stat {
+  background-color: #111111;
+  width: 10vw;
+  height: 100vw;
+  margin-top: -5.1vw;
+  padding-left: 30vw;
+  padding-right: 75vw;
+  margin-right: -90vw;
+  color: gray;
+  font-size: 2.5vw;
+  border: 0.25vw solid black;
+  -webkit-text-stroke: dimgray;
+  -webkit-text-stroke-width: 0.05vw;
+
+  transition: 0.6s;
+}
+
+.stat:hover {
+  background-color: #222222;
+  margin-right: 0vw;
+  margin-left: 12.5vw;
+}
+
+.stat:active {
+  background-color: #222222;
+  margin-right: 0vw;
+  margin-left: 12.5vw;
+}
+
+.head:hover {
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+
+.stats {
+  background-color: #222222;
+  width: 25vw;
+  height: 3.75vw;
+  border-radius: 1vw;
+  border: 0.25vw solid #333333;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.stats:hover {
+  transform: scale(1.05);
+  background-color: #111111;
+  transition: 0.3s;  
+}
+
+.statsR {
+  background-color: #333333;
+  width: 25vw;
+  height: 10vw;
+  border-radius: 1vw;
+  border: 0.25vw solid black;
+  text-align: center;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  margin-bottom: 2.5vw;
+  margin-right: 5vw;
+}
+
+.statsR:hover {
+  transform: scale(1.05);
+  background-color: #222222;
+  transition: 0.3s;
+}
+
+.statsR:active {
+  transform: scale(1.1);
+  background-color: #111111;
+  transition: 0.3s;
+}
+*/
+
+.goBack {
+  background-color: #444444;
+  width: 10vw;
+  height: 3vw;
+  color: darkgray;
+  font-size: 1.5vw;
+  font-family: 'Fredoka One';
+  border: 0.25vw solid black;
+  border-radius: 0.5vw;
+  -webkit-text-stroke: gray;
+  -webkit-text-stroke-width: 0.1vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+
+  transition: 0.3s;
+}
+
+.goBack:hover {
+  border-radius: 0.75vw;
+  transform: scale(1.1);
+  background-color: #222222;
+}
+
+.goBack:active {
+  border-radius: 1vw;
+  transition: 0.4s;
+  transform: scale(1.2);
+  background-color: #111111;
+}
