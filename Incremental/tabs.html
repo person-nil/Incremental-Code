@@ -11,12 +11,18 @@
     <button class="goBack" onclick="changeBack()">Go Back</button>
 
     <div style="display: flex; justify-content: center;">
-      <button>1</button>
+      <button class="reset" onclick="resetButton()" id="resetB">Transcend</button>
     </div>
 
     <script>
       function changeBack() {
         $("#tabs").load("Incremental/indexOrigin.html");
+      }
+    </script>
+
+    <script>
+      function resetButton() {
+        
       }
     </script>
   </body>

@@ -5,12 +5,40 @@
     overflow-y: hidden;
   }
 
+  .button {
+    background-color: #444444;
+    width: 7.5vw;
+    height: 5vh;
+    color: darkgray;
+    font-size: 2.5vh;
+    font-family: 'Fredoka One';
+    border: 0.25vw solid black;
+    border-radius: 0.5vw;
+    -webkit-text-stroke: gray;
+    -webkit-text-stroke-width: 0.1vw;
+    margin-left: -0.75vw;
+
+    transition: 0.3s;
+  }
+
+  .button:hover {
+    border-radius: 0.75vw;
+    transform: scale(1.1);
+    background-color: #222222;
+  }
+
+  .button:active {
+    border-radius: 1vw;
+    transform: scale(1.2);
+    background-color: #111111;
+  }
+
   .building {
     background-color: #444444;
     width: 20vw;
-    height: 5vw;
+    height: 10vh;
     color: darkgray;
-    font-size: 2vw;
+    font-size: 4vh;
     font-family: 'Fredoka One';
     border: 0.25vw solid black;
     border-top-right-radius: 1vw;
@@ -25,13 +53,13 @@
   .buildingTag {
     background-color: #222222;
     width: 20vw;
-    height: 5vw;
+    height: 10vh;
     color: gray;
-    font-size: 2vw;
+    font-size: 4vh;
     font-family: 'Fredoka One';
     border: 0.25vw solid black;
-    border-top-left-radius: 1.25vw;
-    border-bottom-left-radius: 1.25vw;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
     -webkit-text-stroke: dimgray;
     -webkit-text-stroke-width: 0.15vw;
     margin-right: -0.75vw;
@@ -40,19 +68,19 @@
   }
 
   .buildingTag:hover {
-    border-radius: 1vw;
+    border-radius: 1.25vw;
     transform: scale(1.1);
     background-color: #111111;
   }
 
   .building:hover {
-    border-radius: 1vw;
+    border-radius: 1.25vw;
     transform: scale(1.1);
     background-color: #222222;
   }
 
   .building:active {
-    border-radius: 1.25vw;
+    border-radius: 1.75vw;
     transition: 0.4s;
     transform: scale(1.2);
     background-color: #111111;
@@ -61,7 +89,7 @@
   .title {
     text-align: center; 
     color: darkgray; 
-    font-size: 2.5vw;
+    font-size: 5vh;
     display: inline;
     padding-left: 5vw;
     -webkit-text-stroke: gray;
@@ -71,7 +99,7 @@
   .img {
     margin-left: 5vw;
     width: 2.5vw; 
-    height: 2.5vw;
+    height: 5vh;
     transform: rotate(0deg) scale(3);
   }
 
@@ -83,13 +111,13 @@
   .stat {
     background-color: #111111;
     width: 10vw;
-    height: 100vw;
-    margin-top: -5.1vw;
+    height: 200vh;
+    margin-top: -10.2vh;
     padding-left: 30vw;
     padding-right: 75vw;
     margin-right: -90vw;
     color: gray;
-    font-size: 2.5vw;
+    font-size: 5vh;
     border: 0.25vw solid black;
     -webkit-text-stroke: dimgray;
     -webkit-text-stroke-width: 0.05vw;
@@ -117,30 +145,54 @@
   .stats {
     background-color: #222222;
     width: 25vw;
-    height: 3.75vw;
+    height: 7.5vh;
     border-radius: 1vw;
     border: 0.25vw solid #333333;
     text-align: center;
-    font-size: 3vw;
+    font-size: 6vh;
   }
 
   .stats:hover {
     transform: scale(1.05);
     background-color: #111111;
     transition: 0.3s;  
-    border-radius: 1.3vw;
+    border-radius: 1.5vw;
+  }
+
+  .stats2 {
+    background-color: #222222;
+    width: 25vw;
+    height: 7.5vh;
+    border-radius: 1vw;
+    border: 0.25vw solid #333333;
+    text-align: center;
+    font-size: 6vh;
+  }
+
+  .stats2:hover {
+    transform: scale(1.05);
+    background-color: #111111;
+    transition: 0.3s;  
+    border-radius: 1.5vw;
+  }
+
+  .stats2:active {
+    transform: scale(1.1);
+    background-color: #111111;
+    transition: 0.3s;  
+    border-radius: 2vw;
   }
 
   .statsR {
     background-color: #333333;
     width: 25vw;
-    height: 10vw;
+    height: 20vh;
     border-radius: 1vw;
     border: 0.25vw solid black;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 3vh;
     line-height: 2vw;
-    margin-bottom: 2.5vw;
+    margin-bottom: 5vh;
     margin-right: 5vw;
   }
 
@@ -148,12 +200,12 @@
     transform: scale(1.05);
     background-color: #222222;
     transition: 0.3s;
-    border-radius: 1.3vw;
+    border-radius: 1.5vw;
   }
 
   .statsR:active {
     transform: scale(1.1);
     background-color: #111111;
     transition: 0.3s;
-    border-radius: 1.6vw;
+    border-radius: 2vw;
   }

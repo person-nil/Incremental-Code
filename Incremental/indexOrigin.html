@@ -7,6 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link href="./Incremental/style.css" rel="stylesheet">
   <link href="./Incremental/tabs.html" rel="import">
+  <link href="./Incremental/styleTab.css" rel="stylesheet">
 
   <script>
     console.warn('%c VM663:1 ONLY USE THE CONSOLE IF I (A_Person) TELL YOU TO AND ONLY PASTE WHAT I SAY TO PASTE OR YOUR DATA WILL GLITCH AND BE RESET', 'font size: 36px; font-weight: bold;')
@@ -18,14 +19,14 @@
   
   <br>
   <div style="align-items: center;" id="heading" class="head">
-    <button class="building" style="width: 5vw; height: 2.5vw; margin-left: 5vw; font-size: 1vw; -webkit-text-stroke-width: 0.05vw; border-radius: 0.5vw;" id="headClose">Close</button>
-    <h1 class="title" style="font-size: 1.5vw; padding-left: 1vw; -webkit-text-stroke-width: 0.025vw;">It is recommended to play with fullscreen</h1>
-    <h1 class="title" style="padding-left: 10vw;">STAT INCREMENETAL</h1>
+    <button style="margin-left: 5vw;" id="closeButton">Close</button>
+    <h1 class="title" style="font-size: 3vh; padding-left: 1vw; -webkit-text-stroke-width: 0.025vw;">It is recommended to play with fullscreen</h1>
+    <h1 class="title" style="padding-left: 7.5vw;">STAT INCREMENETAL</h1>
     <h1 class="title" style="padding-left: 5vw;">V0.1</h1>
-
+    <br>
+    <br>
+    <div style="height: 2vh; width: 105vw; background-color: black; margin-bottom: 10vh; margin-left: -2.5vw;" id="bottomHead"></div>
   </div>
-  <br>
-  <div style="height: 1vw; width: 105vw; background-color: black; margin-bottom: 5vw; margin-left: -2.5vw;"></div>
 
   <div style="display: flex; justify-content: space-around;">
     <div id="buildings">
@@ -42,42 +43,33 @@
         <br>
         <div class="statsR" onclick="change()">
           <h1 id="Transcend">Transcend</h1>
-          <h1 id="TranscendStat" style="font-size: 2vw;">You Have: 0</h1>
+          <h1 id="TranscendStat" style="font-size: 4vh;">You Have: 0</h1>
         </div>
         <div class="statsR">
           <h1 id="Immortal">Immortalize</h1>
-          <h1 id="ImmortalStat" style="font-size: 2vw;">You Have: 0</h1>
+          <h1 id="ImmortalStat" style="font-size: 4vh;">You Have: 0</h1>
         </div>
       </div>
       <div>
-        <h1 id="settings" class="stats">Settings</h1>
+        <div>
+          <h1 id="settings" class="stats2" >Settings</h1>
+        </div>
         <div class="statsR">
           <h1 id="Transcend">Transcend</h1>
-          <h1 id="TranscendStat" style="font-size: 2vw;">You Have: 0</h1>
+          <h1 id="TranscendStat" style="font-size: 4vh;">You Have: 0</h1>
         </div>
         <div class="statsR">
           <h1 id="Immortal">Immortalize</h1>
-          <h1 id="ImmortalStat" style="font-size: 2vw;">You Have: 0</h1>
+          <h1 id="ImmortalStat" style="font-size: 4vh;">You Have: 0</h1>
         </div>
       </div>
       <div style="opacity: 0;">
         <h1 class="stats"></h1>
-        <div class="statsR">
-
-        </div>
-        <div class="statsR">
-
-        </div>
+        <div class="statsR"></div>
+        <div class="statsR"></div>
       </div>
     </div>
   </div>
-
-
-  <script type="module">
-    import {hello} from './Incremental/main.js'
-
-    console.log(hello())
-  </script>
 
   <script>
     let tab = document.getElementById('bodyTab');
@@ -86,6 +78,20 @@
       tab.setAttribute('id', 'tabs');
       $("#tabs").load("Incremental/tabs.html");
     }
+  </script>
+
+  <script type="module"> 
+    import * as js from './Incremental/main.js' 
+    // ~~---------Functions:  Main; Initialization: Under----------~~ \\
+
+    // Variables
+    let closeTopD = document.getElementById('heading');
+
+    // Function Use
+    document.getElementById('closeButton').addEventListener('click', function() { 
+      js.Close(closeTopD, -15);
+      document.getElementById('statC').style.marginTop = "-16vh"
+    });
   </script>
 
 </body>
